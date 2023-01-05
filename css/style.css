@@ -1,0 +1,1567 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #1754A3;
+    --color-secondary: #45A2DC;
+    --color-white: #ffffff;
+    --color-text:#000000;
+
+    --container-width-lg:94%;
+    --container-width-md:90%;
+    --container-width-sm:92%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+/*h1,h2,h3,h4,h5{
+    color: var(--color-primary);
+}*/
+
+h1{
+    font-size: 63px;
+    line-height: 65x;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+h2{
+    font-size: 100px;
+    line-height: 117.5px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+h3{
+    font-size: 73px;
+    line-height: 85.78px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+h4{
+    font-size: 36px;
+    line-height: 42.3px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+h5{
+    font-size: 30px;
+    line-height: 35.25px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 0;
+}
+
+.btn{
+    background: var(--color-secondary);
+    color: var(--color-white);
+    display: inline-block;
+    width: fit-content;
+    padding: 12px 50px;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.btn:hover{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-secondary);
+}
+
+.btn-primary{
+    background: var(--color-secondary);
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+.btn-header{
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+
+
+/* ==================== Navbar ==================== */
+
+nav{
+    background: var(--color-white);
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav li a{
+    color: var(--color-primary);
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+    transition: all 400ms ease;
+}
+
+nav a:hover{
+    color: var(--color-secondary);
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+}
+
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 77px;
+}
+
+
+/* ==================== Header ==================== */
+
+header{
+    height: calc(100vh - 80px);
+    position: relative;
+    top: 100px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.header_container{
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    height:100%;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 129px;
+}
+
+.header_left p{
+    color: var(--color-white);
+    margin-top: 15px;
+    margin-bottom: 77px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.header_right{
+    position: relative;
+    height: 100%;
+}
+
+
+/* ==================== What we do ==================== */
+
+.whatwedo{
+    padding-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.whatwedo_container{
+    margin-top: -10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.whatwedo_left{
+    margin-right: 200px;
+    align-items: center;
+}
+
+.whatwedo_right{
+    z-index: 2;
+    margin-left: 30px;
+}
+
+.whatwedo_right h1{
+    margin-top: -20px;
+}
+
+.whatwedo_right p{
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.whatwedo_image{
+    z-index: 2;
+    margin-left: 125px;
+    scale: 150%;
+}
+
+.whatwedo_button{
+    margin-left: -200px;
+}
+
+
+
+.whatwedobgimage{
+    position: absolute;
+    scale: 200%;
+    opacity: 60%;
+    margin-top: -620px;
+    margin-bottom: -900px;
+    margin-left: -310px;
+    margin-right: 200px;
+    right: 6;
+}
+
+
+/* ==================== Teachers ==================== */
+
+.teachers{
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.teachers_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+
+.teachers_head-right{
+    background: var(--color-secondary);
+    padding-top: 74px;
+    padding-bottom: 89px;
+    padding-left: 86px;
+    padding-right: 91px;
+}
+
+.teachers_head-right p{
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/* ==================== Vote ==================== */
+
+.vote{
+    width: 100%;
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.vote_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    overflow: hidden;
+}
+
+.profile{
+    background: #1754A3;
+    text-align: left;
+    border: 0px solid transparent;
+    transition: var(--transition);
+}
+
+.profile_info-left{
+    background: var(--color-primary);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.profile_info h4{
+    font-size: 17px;
+    color: var(--color-white);
+    padding-left: 20px;
+}
+
+.profile_info p{
+    font-size: 20px;
+    color: #45A2DC;
+    padding-left: 20px;
+}
+
+.btn-viewprofile{
+    display: inline-block;
+    width: fit-content;
+    background: #001763;
+    border-radius: 0;
+    margin-left: 2px;
+    margin-top: -3px;
+    font-size: 18.5px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 99%;
+}
+
+.btn-vote{
+    display: inline-block;
+    align-content: center;
+    background: #45A2DC;
+    border-radius: 0;
+    margin-left: 2px;
+    margin-top: 0px;
+    font-size: 18.5px;
+    font-weight: 700;
+    width: 99%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.vote2{
+    width: 100%;
+    padding-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* ==================== Projects ==================== */
+
+
+.projects{
+    width: 100%;
+    padding-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.projects_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.project{
+    background: transparent;
+    text-align: left;
+    border:none;
+}
+
+.projects h2{
+    padding-bottom: 55px;
+    margin-left: 30px;
+}
+
+
+.projects h4{
+    padding-top: 24px;
+    padding-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.projects p{
+    color: #000000;
+    padding-bottom: 40px;
+    font-size: 16;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.btn-secondary{
+    background: var(--color-secondary);
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+.projectbgimage{
+    position: absolute;
+    scale: 100%;
+    opacity: 60%;
+    margin-top: -220px;
+    margin-bottom: -100px;
+    margin-left: -110px;
+    margin-right: 200px;
+}
+
+
+
+/* ==================== Form ==================== */
+
+.form{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    overflow: hidden;
+    align-items: center;
+    background: var(--color-secondary);
+    
+}
+
+.form_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /*gap: 4rem;*/
+    align-items: center;
+}
+
+.form_left{
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    gap: 10px;
+    padding-left: 100px;
+    padding-right: 150px;
+}
+
+.btn-donate{
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.form_right h1{
+    color: var(--color-white);
+    font-size: 60px;
+    font-weight: 74;
+    font-weight: 700;
+    padding-bottom: 41px;
+}
+
+.form_right p{
+    color: var(--color-white);
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 400;
+    padding-bottom: 26px;
+}
+
+.btn-donate2{
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+.buttontext{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* ==================== Footer ==================== */
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--color-primary);
+    overflow: hidden;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer .container ul{
+    color: var(--color-white);
+    display: flex;
+    gap: 30px;
+}
+
+footer .container ul a{
+    color: var(--color-text);
+}
+
+
+footer .container ul a:hover{
+    color: var(--color-text);
+}
+
+footer .container .socialmedia{
+    color: var(--color-white);
+    display: flex;
+    gap: 30px;
+    align-content: left;
+}
+
+ footer .container .socialmedia a{
+    padding: 10px;
+    color: var(--color-white);
+    
+} 
+
+footer .container .socialmedia .facebook{
+    align-items: center;
+    border-right: 1px solid;
+    padding-right: 20px;
+    color: var(--color-white);
+}
+
+footer .container .socialmedia .twitter{
+    align-items: center;
+    border-right: 1px solid;
+    padding-right: 20px;
+    color: var(--color-white);
+}
+
+footer .container .socialmedia .instagram{
+    align-items: center;
+    border-right: 1px solid;
+    padding-right: 20px;
+    color: transparent;
+}
+
+.footer_container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+.footer_container .footer_1 h4{
+    color:var(--color-white);
+}
+
+.footer_container .footer_3 h4{
+    color:var(--color-white);
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 10px;
+}
+
+.footer_container .footer_3 p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+/* ======================================== Media queries (Tablets) ======================================== */
+
+@media screen and (max-width: 1024px) {
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .container{
+        width: var(--container-width-md);
+        overflow: hidden;
+    }
+
+
+    /* ==================== Navbar ==================== */
+
+    nav{
+        background: var(--color-secondary);
+    }
+
+    .nav_container{
+        position: relative;
+        width: 100vw;
+    }
+
+    .nav_logo h4{
+        color: var(--color-white);
+        margin-left: 50px;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 100px;
+        bottom: 100px;
+        right: 0;
+        height: fit-content;
+        width: 400px;
+        flex-direction: column;
+        gap: 0;
+        z-index: 40;
+        display: none;
+    }
+
+    .nav_menu li{
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav_menu li a{
+        background: var(--color-secondary);
+        box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.2);
+        color: var(--color-white);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-header{
+        border-radius: 0;
+        align-items: center;
+    }
+
+    .nav_menu li a:hover{
+        background: #ffffff;
+        color: #000000;
+    }
+
+    nav button{
+        display: inline-block;
+        margin-right: -780px;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: 40px;
+    }
+
+    nav button#close-menu-btn{
+        display: none;
+    }
+
+
+    /* ==================== Header ==================== */
+
+
+    header{
+        height: 100%;
+        padding: 0 0 0;
+    }
+
+    .header_container{
+        align-items: flex-end;
+        height: 100%;
+        align-content: center;
+        
+    }
+
+    .header_left{
+        margin-bottom: 40px;
+    }
+
+    .header_right{
+        align-self: flex-end;
+        height: 100%;
+    }
+
+    .header_image{
+        bottom: -20px;
+        width: 100%;
+    }
+    
+
+    .header_left p{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .header_left h1{
+        padding-top: 60px;
+    }
+
+    .btn-primary{
+        font-size: 16px;;
+    }
+
+
+    /* ==================== whatwedo ==================== */
+
+
+    .whatwedo{
+        padding-top: 180px;
+        margin-left: 50px;
+        margin-right: 50px;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .whatwedo_container{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .whatwedo_left{
+        margin-right: 200px;
+        align-items: center;
+    }
+    
+    .whatwedo_right{
+        z-index: 2;
+        margin-left: 100px;
+    }
+    
+    .whatwedo_right h1{
+        margin-top: -40px;
+    }
+    
+    .whatwedo_right p{
+        color: var(--color-text);
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .whatwedo_image{
+        z-index: 2;
+        margin-left: 125px;
+        scale: 450%;
+    }
+    
+    .whatwedo_button{
+        margin-left: 0px;
+    }
+
+
+    /* ==================== Teachers ==================== */
+
+
+    .teachers{
+        padding-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        overflow: hidden;
+    }
+    
+    .teachers_container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+    }
+    
+    
+    .teachers_head-right{
+        background: var(--color-secondary);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: 30px;
+    }
+    
+    .teachers_head-right p{
+        color: var(--color-white);
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .teachers_head h4{
+        padding-top: 10px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+
+
+    /* ==================== Vote ==================== */
+
+    .vote{
+        width: 100%;
+        padding-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    .vote_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        overflow: hidden;
+    }
+    
+    .profile{
+        background: #1754A3;
+        text-align: center;
+        border: 0px solid transparent;
+        transition: var(--transition);
+    }
+    
+    .profile_info-left{
+        background: var(--color-primary);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    
+    .profile_info h4{
+        font-size: 17px;
+        color: var(--color-white);
+        padding-left: 20px;
+    }
+    
+    .profile_info p{
+        font-size: 20px;
+        color: #45A2DC;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin-top: -10px;
+    }
+    
+    .btn-viewprofile{
+        display: inline-block;
+        width: fit-content;
+        background: #001763;
+        border-radius: 0;
+        margin-left: 2px;
+        margin-top: -3px;
+        font-size: 18.5px;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 99%;
+    }
+    
+    .btn-vote{
+        display: inline-block;
+        width: fit-content;
+        align-content: center;
+        background: #45A2DC;
+        border-radius: 0;
+        margin-left: 2px;
+        margin-top: 0px;
+        font-size: 18.5px;
+        font-weight: 700;
+        width: 99%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }    
+    
+    .vote2{
+        width: 100%;
+        padding-top: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+
+    /* ==================== Projects ==================== */
+
+    .projects{
+        width: 100%;
+        padding-top: 90px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+    
+    .projects_container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin-top: -20;
+    }
+    
+    .project{
+        background: transparent;
+        text-align: left;
+        border:none;
+    }
+
+    .projects h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .projects h4{
+        padding-top: 24px;
+        padding-bottom: 20px;
+        color: #000000;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 700;
+    }
+    
+    .projects p{
+        color: #000000;
+        padding-bottom: 40px;
+        font-size: 16;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    
+    .btn-secondary{
+        background: var(--color-secondary);
+        color: var(--color-white);
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+
+    /* ==================== Form ==================== */
+
+
+    .form{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    overflow: hidden;
+    align-items: center;
+    background: var(--color-secondary);
+    }
+
+    .form_container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /*gap: 4rem;*/
+        align-items: center;
+    }
+    
+    .form_left{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .btn-donate{
+        background: var(--color-primary);
+        color: var(--color-white);
+        font-size: 20px;
+        line-height: 20px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    
+    .form_right h1{
+        color: var(--color-white);
+        font-size: 30px;
+        font-weight: 35;
+        font-weight: 700;
+        padding-bottom: 41px;
+    }
+    
+    .form_right p{
+        color: var(--color-white);
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        padding-bottom: 26px;
+    }
+    
+    .btn-donate2{
+        background: var(--color-primary);
+        color: var(--color-white);
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 700;
+    }
+    
+    .buttontext{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    /* ==================== Footer ==================== */
+    
+    
+    footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: var(--color-primary);
+        overflow: hidden;
+    }
+    
+    footer .container{
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    footer .container ul{
+        color: var(--color-white);
+        display: flex;
+        gap: 30px;
+    }
+    
+    footer .container ul a{
+        color: var(--color-text);
+        font-size: 1px;
+        align-items:center;
+    }
+    
+    footer .container ul a:hover{
+        color: var(--color-text);
+    }
+    
+    footer .container .socialmediamobile{
+        color: var(--color-white);
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        display: none;
+    }
+    
+     footer .container .socialmedia a{
+        padding: 10px;
+        color: var(--color-white);
+        display: none;
+    } 
+    
+    footer .container .socialmedia .facebook{
+        align-items: center;
+        border-right: 1px solid;
+        padding-right: 20px;
+        color: var(--color-white);
+    }
+    
+    footer .container .socialmedia .twitter{
+        align-items: center;
+        border-right: 1px solid;
+        padding-right: 20px;
+        color: var(--color-white);
+    }
+    
+    footer .container .socialmedia .instagram{
+        align-items: center;
+        border-right: 1px solid;
+        padding-right: 20px;
+        color: transparent;
+    }
+    
+    .footer_container{
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        color: #ffffff;
+        margin-top: 60px;
+    }
+    
+    .footer_container .footer_1 h4{
+        color:var(--color-white);
+    }
+    
+    .footer_container .footer_2 h4{
+        color:var(--color-white);
+        font-size: 12px;
+        line-height: 23px;
+        padding-bottom: 0px;
+    }
+    
+    .footer_container .footer_3 p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .footer_container .footer_4 p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+}
+
+
+
+
+
+/* ==================== Media queries (Mobile) ==================== */
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .container{
+        width: var(--container-width-sm);
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    .selection{
+        padding: 20px;
+        margin: 20px;
+    }
+
+
+    /* ==================== Navbar ==================== */
+
+    nav{
+        background: var(--color-secondary);
+    }
+
+    .nav_container{
+        position: relative;
+        width: 100vw;
+    }
+
+    .nav_logo h4{
+        color: var(--color-white);
+        margin-left: 50px;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 100px;
+        bottom: 100px;
+        right: 0;
+        height: fit-content;
+        width: 400px;
+        flex-direction: column;
+        gap: 0;
+        z-index: 40;
+        display: none;
+    }
+
+    .nav_menu li{
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav_menu li a{
+        background: var(--color-secondary);
+        box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.2);
+        color: var(--color-white);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-header{
+        border-radius: 0;
+        align-items: center;
+    }
+
+    .nav_menu li a:hover{
+        background: #ffffff;
+        color: #000000;
+    }
+
+    nav button{
+        display: inline-block;
+        margin-right: -140px;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: 40px;
+    }
+
+    nav button#close-menu-btn{
+        display: none;
+    }
+
+
+    /* ==================== Header ==================== */
+
+    .header_container{
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+        gap: 0;
+    }
+
+    .header_left{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .btn-primary{
+        font-size: 16px;
+    }
+
+
+    /* ==================== what we do ==================== */
+
+    .whatwedo{
+        padding-top: 80px;
+        margin-left: 50px;
+        margin-right: 50px;
+        overflow: hidden;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .whatwedo_container{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .whatwedo_left{
+        margin-right: 0;
+        align-items: center;
+    }
+    
+    .whatwedo_right{
+        z-index: 2;
+        margin-left: 0px;
+    }
+    
+    .whatwedo_right h1{
+        margin-top: -40px;
+    }
+    
+    .whatwedo_right p{
+        color: var(--color-text);
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .whatwedo_image{
+        margin-top: 100px;
+        margin-left: 0;
+        scale: 100%;
+    }
+    
+    .whatwedo_button{
+        margin-left: 0px;
+    }
+
+    /* ==================== Teachers ==================== */
+
+
+    .teachers{
+        padding-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        overflow: hidden;
+    }
+    
+    .teachers_container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .teachers_head-right{
+        background: var(--color-secondary);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: -40px;
+    }
+    
+    .teachers_head-right p{
+        color: var(--color-white);
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .teachers_head h4{
+        padding-top: 10px;
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 40px;
+    }
+
+
+    /* ==================== Vote ==================== */
+
+   
+    
+    .vote_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    
+
+
+    /* ==================== Projects ==================== */
+
+    .projects{
+        width: 100%;
+        padding-top: 90px;
+        margin-left: 50px;
+        margin-right: 50px;
+        
+    }
+    
+    .projects_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: -60;
+    }
+    
+
+     /* ==================== Form ==================== */
+
+
+     .form{
+        width: 100%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 80px;
+        overflow: hidden;
+        align-items: center;
+        background: var(--color-secondary);
+        }
+    
+        .form_container{
+            display: grid;
+            grid-template-columns: 1fr;
+            /*gap: 4rem;*/
+            align-items: center;
+        }
+        
+        .form_left{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .form_right{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        
+        .btn-donate{
+            background: var(--color-primary);
+            color: var(--color-white);
+            font-size: 20px;
+            line-height: 20px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+        
+        .form_right h1{
+            color: var(--color-white);
+            font-size: 30px;
+            font-weight: 35;
+            font-weight: 700;
+            padding-top: 50px;
+            padding-bottom: 41px;
+        }
+        
+        .form_right p{
+            color: var(--color-white);
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 400;
+            padding-bottom: 26px;
+        }
+        
+        .btn-donate2{
+            background: var(--color-primary);
+            color: var(--color-white);
+            font-size: 16px;
+            line-height: 23px;
+            font-weight: 700;
+            
+        }
+        
+        .buttontext{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+
+        /* ==================== Footer ==================== */
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--color-primary);
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+footer .container{
+    display: grid;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer .container ul{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 30px;
+}
+
+footer .container ul a{
+    color: var(--color-text);
+}
+
+
+footer .container ul a:hover{
+    color: var(--color-text);
+}
+
+footer .container .socialmedia{
+    color: var(--color-white);
+    display: flex;
+    gap: 30px;
+    align-content: left;
+}
+
+ footer .container .socialmedia a{
+    padding: 10px;
+    color: var(--color-white);
+    
+} 
+
+footer .container .socialmedia .facebook{
+    align-items: center;
+    border-right: 1px solid;
+    padding-right: 20px;
+    color: var(--color-white);
+}
+
+footer .container .socialmedia .twitter{
+    align-items: center;
+    border-right: 1px solid;
+    padding-right: 20px;
+    color: var(--color-white);
+}
+
+footer .container .socialmedia .instagram{
+    align-items: center;
+    border-right: 1px solid;
+    padding-right: 20px;
+    color: transparent;
+}
+
+.footer_container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #ffffff;
+    margin-top: 60px;
+    justify-content: left;
+}
+
+.footer_container .footer_1 h4{
+    color:var(--color-white);
+    padding-bottom: 30px;
+}
+
+.footer_container .footer_2 p{
+    color:var(--color-white);
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 30px;
+}
+
+.footer_container .footer_3 h4{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.footer_container .footer_4 p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+        
+    
+
+
+
+    
+
+
+
+
+
+
+    
+    
+}
